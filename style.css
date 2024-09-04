@@ -9,4 +9,47 @@ h5 {
 
 body {
     background-color: black;
+    margin: 0;
+}
+
+#content {
+    padding: 15px;
+    margin-left: 100px;
+}
+
+#sidebar {
+    width: 100px;
+    height: 100%;
+    background-color: gray;
+    position: fixed;
+    overflow: hidden;
+}
+
+#sidebar a {
+    padding: 6px;
+}
+
+header {
+    background-color: blueviolet;
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover,
+#currentPageLink {
+    color: red;
+}
+
+header ul {
+    list-style-type: none;
 }
