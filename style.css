@@ -30,7 +30,8 @@ body {
 
 /*---------V--Sidenav--V---------*/
 
-.navdiv {
+.navdiv,
+nav {
     height: 100%;
     background-color: #242424;
     width: 250px;
@@ -98,7 +99,8 @@ hr.solid {
     border: 1px solid #bdbdbd;
 }
 
-.content {
+.content,
+main {
     margin-top: 80px;
     margin-left: 250px;
     padding: 20px;
@@ -124,6 +126,11 @@ hr.solid {
 
 /*---------V--Dashboard--V---------*/
 
+.dashboard-items {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
 .dashboard-item {
     background-color: #242424;
     height: 400px;
@@ -143,10 +150,26 @@ hr.solid {
     overflow: hidden;
 }
 
-.dashboard-item p {
+.dashboard-item ul {
     height: 50%;
     padding-right: 10px;
     overflow-y: auto;
+}
+
+.dashboard-item ul li::marker {
+    font-size: 30px;
+}
+
+.dashboard-item ul li.done::marker {
+    color: green;
+}
+
+.dashboard-item ul li.pending::marker {
+    color: yellow;
+}
+
+.dashboard-item ul li.failed::marker {
+    color: red;
 }
 
 .dashboard-item button {
@@ -166,9 +189,4 @@ hr.solid {
 
 .dashboard-item button:hover {
     background-color: #4d0a2f;
-}
-
-.dashboard-items {
-    max-width: 100%;
-    flex-wrap: wrap;
 }
