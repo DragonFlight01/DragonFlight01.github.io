@@ -1,9 +1,9 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: #383838;
+    background-color: #1c1c1c;
     font-family: Verdana;
-    color: #ffffff;
+    color: #f6feff;
 }
 
 body {
@@ -11,9 +11,11 @@ body {
     height: 100%;
 }
 
+/*---------V--Topnav--V---------*/
+
 .topnav {
     overflow: hidden;
-    background-color: #1c1c1c;
+    background-color: #1f1f1f;
     padding: 0px 20px;
     top: 0;
     left: 0;
@@ -23,12 +25,14 @@ body {
 }
 
 .topnav p {
-    color: #ffffff;
+    color: #f6feff;
 }
+
+/*---------V--Sidenav--V---------*/
 
 .navdiv {
     height: 100%;
-    background-color: #2d2d2d;
+    background-color: #242424;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -50,7 +54,7 @@ body {
 
 .nav-li a {
     display: block;
-    color: #ffffff;
+    color: #f6feff;
     padding: 8px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -58,64 +62,113 @@ body {
 
 .nav-lis a {
     display: block;
-    color: #ffffff;
+    color: #f6feff;
     padding: 12px 35px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .nav-li a.active {
-    background-color: #870000;
-    color: white;
+    background-color: #72194d;
+    color: #f6feff;
 }
 
 .nav-lis a.active {
-    background-color: #870000;
-    color: white;
+    background-color: #72194d;
+    color: #f6feff;
 }
 
 .nav-li a:hover:not(.active) {
-    background-color: #4c4c4c;
-    color: white;
+    background-color: #4d0a2f;
+    color: #f6feff;
 }
 
 .nav-lis a:hover:not(.active) {
-    background-color: #4c4c4c;
-    color: white;
+    background-color: #4d0a2f;
+    color: #f6feff;
+}
+
+/*---------V--Structure--V---------*/
+
+.flex-container {
+    display: flex;
+}
+
+hr.solid {
+    border: 1px solid #bdbdbd;
 }
 
 .content {
-    margin-left: 20%;
-    padding-left: 20px;
-    padding-top: 20px;
     margin-top: 80px;
-    width: 75%;
+    margin-left: 250px;
+    padding: 20px;
+    width: auto;
 }
 
-.overmijdiv {
-    float: left;
+/*---------V--Home--V---------*/
+
+.bewijzen {
+    margin: 50px 0px;
 }
 
 .bewijzen img {
     float: left;
-    width: 350px;
+    width: 500px;
     height: 100%;
     padding: 5px;
-}
-
-.content iframe {
-    width: 100%;
-    height: 900px;
-    padding-top: 25px;
-    float: left;
-    border: none;
 }
 
 .content span {
     display: block;
 }
 
-.powerups {
-    width: 35%;
-    height: 35%;
+/*---------V--Dashboard--V---------*/
+
+.dashboard-item {
+    background-color: #242424;
+    height: 400px;
+    width: 620px;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.dashboard-item h2 {
+    height: 15%;
+    overflow: hidden;
+}
+
+.dashboard-item h3 {
+    height: 5%;
+    overflow: hidden;
+}
+
+.dashboard-item p {
+    height: 50%;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+.dashboard-item button {
+    background-color: #72194d;
+    max-width: 100%;
+    overflow: hidden;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.dashboard-item button:hover {
+    background-color: #4d0a2f;
+}
+
+.dashboard-items {
+    max-width: 100%;
+    flex-wrap: wrap;
 }
