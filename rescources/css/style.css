@@ -13,7 +13,7 @@ body {
 
 /*---------V--Topnav--V---------*/
 
-.topnav {
+header {
     overflow: hidden;
     background-color: #1f1f1f;
     padding: 0px 20px;
@@ -24,8 +24,19 @@ body {
     font-size: 23px;
 }
 
-.topnav p {
+header p {
     color: #f6feff;
+}
+
+header img {
+    float: left;
+    max-height: 45px;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.top-nav {
+    float: right;
 }
 
 /*---------V--Sidenav--V---------*/
@@ -199,6 +210,8 @@ main {
     background-color: #242424;
     max-width: 100%;
     min-height: 200px;
+    max-height: 500px;
+    overflow: hidden;
     border-radius: 40px;
     margin: 20px;
     padding: 30px;
@@ -206,6 +219,10 @@ main {
 
 .blogpost p {
     min-height: 100px;
+}
+
+.blogpost-full {
+    max-height: 90%;
 }
 
 /*---------V--FAQ--V---------*/
