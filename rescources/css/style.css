@@ -37,9 +37,9 @@ header img {
 }
 
 .top-nav {
-    display: inline-block;
-    vertical-align: ;
+    float: right;
     margin-right: 50px;
+    margin-top: 22px;
 }
 
 .top-nav-li {
@@ -184,18 +184,13 @@ tr:not(:first-child) {
     padding: 30px;
 }
 
-.dashboard-item h2 {
-    height: 15%;
-    overflow: hidden;
-}
-
 .dashboard-item h3 {
-    height: 5%;
+    height: 6%;
     overflow: hidden;
 }
 
 .dashboard-item ul {
-    height: 50%;
+    height: 60%;
     padding-right: 10px;
     overflow-y: auto;
 }
@@ -216,9 +211,24 @@ tr:not(:first-child) {
     color: red;
 }
 
-progress {
+.progress-bar progress {
     width: 90%;
     height: 50px;
+}
+
+/*---------V--Profiel--V---------*/
+
+.profiel-div {
+    margin-bottom: 30px;
+}
+
+.profiel-div img {
+    max-width: 200px;
+    margin: 30px;
+}
+
+.profile-images img {
+    max-height: 200px;
 }
 
 /*---------V--Blog--V---------*/
