@@ -31,24 +31,73 @@
 
     <main>
         <h1>Dashboard</h1>
-        <div class="dashboard-items flex-container">
-            <article class="dashboard-item">
-                <h2>Program- & Career Orientation</h2>
-                <h3>Q1 - 10EC - CU75001V3</h3>
-                <ul>
-                    <li class="pending">Excercise 1.8 - Screenshot your working enviroment</li>
-                    <li>Excercise 6.2 - Visual dashboard design</li>
-                </ul>
-                <button class="button1">Details</button>
-            </article>
-            <article class="dashboard-item">
-                <h2>Computer Science Basics</h2>
-                <h3>Q1 - 10EC - CU75002V2</h3>
-                <ul>
-                </ul>
-                <button class="button1">Details</button>
-            </article>
-        </div>
+        <table>
+            <tr>
+                <th>Quarter</th>
+                <th>Course</th>
+                <th>Exams</th>
+                <th>Grade</th>
+                <th>EC</th>
+            </tr>
+            <tr>
+                <td rowspan="4">1</td>
+                <td>Program- & Career Orientation</td>
+                <td>Pitch</td>
+                <td>n/a</td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td>Computer Science Basics</td>
+                <td>Written exam</td>
+                <td>n/a</td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td>Programming basics</td>
+                <td>Application</td>
+                <td>n/a</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Personal Professional Development Exploration</td>
+                <td>Application</td>
+                <td>n/a</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+        </table>
+        <h3>Progress this year</h2>
+            <div class="progress-bar flex-container">
+                <p style="margin-right: 20px;">5</p>
+                <progress max="60" value="5"></progress>
+                <p style="margin-left: 20px;">60</p>
+            </div>
+            <div class="dashboard-items flex-container">
+                <article class="dashboard-item">
+                    <h2>Program- & Career Orientation</h2>
+                    <h3>Q1 - 10EC - CU75001V3</h3>
+                    <ul>
+                        <li class="pending">Excercise 1.8 - Screenshot your working enviroment</li>
+                        <li>Excercise 6.2 - Visual dashboard design</li>
+                    </ul>
+                    <button class="button1">Details</button>
+                </article>
+                <article class="dashboard-item">
+                    <h2>Computer Science Basics</h2>
+                    <h3>Q1 - 10EC - CU75002V2</h3>
+                    <ul>
+                    </ul>
+                    <button class="button1">Details</button>
+                </article>
+            </div>
     </main>
 
     <div class="clear">

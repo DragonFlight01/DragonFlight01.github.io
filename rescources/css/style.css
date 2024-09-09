@@ -25,6 +25,7 @@ header {
 }
 
 header p {
+    float: left;
     color: #f6feff;
 }
 
@@ -36,13 +37,25 @@ header img {
 }
 
 .top-nav {
-    float: right;
+    display: inline-block;
+    vertical-align: ;
+    margin-right: 50px;
+}
+
+.top-nav-li {
+    display: inline-block;
+}
+
+.top-nav-li a {
+    color: #f6feff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /*---------V--Sidenav--V---------*/
 
-.navdiv,
-nav {
+.navdiv {
     height: 100%;
     background-color: #242424;
     width: 250px;
@@ -72,30 +85,12 @@ nav {
     font-size: 20px;
 }
 
-.nav-lis a {
-    display: block;
-    color: #f6feff;
-    padding: 12px 35px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
 .nav-li a.active {
     background-color: #72194d;
     color: #f6feff;
 }
 
-.nav-lis a.active {
-    background-color: #72194d;
-    color: #f6feff;
-}
-
 .nav-li a:hover:not(.active) {
-    background-color: #4d0a2f;
-    color: #f6feff;
-}
-
-.nav-lis a:hover:not(.active) {
     background-color: #4d0a2f;
     color: #f6feff;
 }
@@ -116,6 +111,23 @@ main {
     margin-left: 250px;
     padding: 20px;
     width: auto;
+}
+
+th {
+    text-align: start;
+    padding: 5px 30px;
+}
+
+td {
+    padding: 5px 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:not(:first-child) {
+    border-top: 1pt solid rgb(71, 77, 79);
 }
 
 /*---------V--Misc-styling--V---------*/
@@ -202,6 +214,11 @@ main {
 
 .dashboard-item ul li.failed::marker {
     color: red;
+}
+
+progress {
+    width: 90%;
+    height: 50px;
 }
 
 /*---------V--Blog--V---------*/
