@@ -244,6 +244,10 @@ tr:not(:first-child) {
     min-height: 100px;
 }
 
+.blogpost button {
+    margin: 10px 0;
+}
+
 .blogpost-full {
     max-height: 90%;
 }
