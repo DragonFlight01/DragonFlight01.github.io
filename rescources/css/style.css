@@ -231,9 +231,9 @@ tr:not(:first-child) {
 
 .blogpost {
     background-color: #242424;
-    max-width: 100%;
+    max-width: 60%;
     min-height: 200px;
-    max-height: 500px;
+    max-height: 300px;
     overflow: hidden;
     border-radius: 40px;
     margin: 20px;
@@ -241,7 +241,11 @@ tr:not(:first-child) {
 }
 
 .blogpost p {
-    min-height: 100px;
+    min-height: 40px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
 }
 
 .blogpost button {
@@ -252,8 +256,44 @@ tr:not(:first-child) {
     max-height: 90%;
 }
 
+
+.blogpost-full p {
+    max-height: 90%;
+}
+
 /*---------V--FAQ--V---------*/
 
 .faq {
-    max-width: 800px;
+    max-width: 1200px;
+}
+
+.accordion {
+    background-color: #242424;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    color: #f6feff;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #4d0a2f;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 9px 18px;
+    background-color: #242424;
+    display: none;
+    overflow: hidden;
+    color: #f6feff;
+}
+
+.accordion-div {
+    margin-bottom: 30px;
 }

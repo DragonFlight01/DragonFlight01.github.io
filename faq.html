@@ -8,6 +8,7 @@
     <meta name="description" content="Frequently asked questions (en hun antwoorden)">
     <meta name="robots" content="index, archive">
     <link rel="stylesheet" type="text/css" href="\rescources\css\style.css">
+
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <p>Website Korben de Vos</p>
         <nav class=" top-nav">
             <ul class="nav-ul">
-                <li class="top-nav-li"><a class="active" target="_blank"
+                <li class="top-nav-li"><a target="_blank"
                         href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-part-time-2023-2024-DEF.pdf">Examen
                         Regeling</a></li>
                 <li class="top-nav-li"><a target="_blank"
@@ -46,35 +47,79 @@
     <main>
         <div class="faq">
             <h1>FAQ</h1>
-            <h3>How can you print a document from your laptop at HZ?</h3>
-            <p>You have to connect your laptop to "HZ printer" by going to <a href="hz.mynetpay.nl">hz.mynetpay.nl</a>.
-                Then You will have to log in with your HZ account, and then you can use the printer.</p>
-            <br>
-            <h3>How can you scan a document and send it to your laptop at HZ?</h3>
-            <p>Open Windows Fax or MacOS and place your document faced down on the scanner bed of the HZ printer. After
-                that select scan and the document should appear on your device. From there you can save it.</p>
-            <br>
-            <h3>How can i buy something on the HZ web shop?</h3>
-            <p>You first have to log into the HZ webshop with your HZ account
-                After that you can add an item to your shopping cart by clicking "Bestel"
-                Then you can go to your shopping cart and click on "Afrekenen"
-                After the payment has been completed, your item will be ordered.</p>
-            <br>
-            <h3>How can you book a project space in one of the wings?</h3>
-            <p>Go to the <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Self service portal</a>
-                and book a reservation using the calendar.
-            </p>
-            <br>
-            <h3>What are the instructions if you want to park your car at the HZ parking lot?
-            </h3>
-            <p>To enter the parking lot, you must have your HZ card with you to be admitted.
-                After that you follow the signs pointing towards HZ parking spaces.
-                At these parking spaces you can park your car.</p>
+            <div class="accordion-div">
+                <button class="accordion">
+                    <h3>How can you print a document from your laptop at HZ?</h3>
+                </button>
+                <div class="panel">
+                    <p>You have to connect your laptop to "HZ printer" by going to <a
+                            href="hz.mynetpay.nl">hz.mynetpay.nl</a>.
+                        Then You will have to log in with your HZ account, and then you can use the printer.</p>
+                </div>
+            </div>
+            <div class="accordion-div">
+                <button class="accordion">
+                    <h3>How can you scan a document and send it to your laptop at HZ?</h3>
+                </button>
+                <div class="panel">
+                    <p>Open Windows Fax or MacOS and place your document faced down on the scanner bed of the HZ
+                        printer.
+                        After
+                        that select scan and the document should appear on your device. From there you can save it.</p>
+                </div>
+            </div>
+            <div class="accordion-div">
+                <button class="accordion">
+                    <h3>How can i buy something on the HZ web shop?</h3>
+                </button>
+                <div class="panel">
+                    <p>You first have to log into the HZ webshop with your HZ account
+                        After that you can add an item to your shopping cart by clicking "Bestel"
+                        Then you can go to your shopping cart and click on "Afrekenen"
+                        After the payment has been completed, your item will be ordered.</p>
+                </div>
+            </div>
+            <div class="accordion-div">
+                <button class="accordion">
+                    <h3>How can you book a project space in one of the wings?</h3>
+                </button>
+                <div class="panel">
+                    <p>Go to the <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Self service portal</a>
+                        and book a reservation using the calendar.</p>
+                </div>
+            </div>
+            <div class="accordion-div">
+                <button class="accordion">
+                    <h3>What are the instructions if you want to park your car at the HZ parking lot?</h3>
+                </button>
+                <div class="panel">
+                    <p>To enter the parking lot, you must have your HZ card with you to be admitted.
+                        After that you follow the signs pointing towards HZ parking spaces.
+                        At these parking spaces you can park your car.</p>
+                </div>
+            </div>
         </div>
     </main>
 
     <div class="clear">
     </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 
