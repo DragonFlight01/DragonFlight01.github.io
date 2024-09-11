@@ -159,9 +159,15 @@ tr:not(:first-child) {
 
 .bewijzen img {
     float: left;
-    width: 500px;
+    width: 600px;
     height: 100%;
     padding: 5px;
+}
+
+.bewijzen div {
+    padding: 0px 10px;
+    flex: 0 0 600px;
+    align-self: center
 }
 
 .content span {
@@ -254,6 +260,7 @@ tr:not(:first-child) {
 
 .blogpost-full {
     max-height: 90%;
+    max-width: 90%;
 }
 
 
