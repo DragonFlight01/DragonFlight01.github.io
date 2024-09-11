@@ -191,12 +191,12 @@ tr:not(:first-child) {
 }
 
 .dashboard-item h3 {
-    height: 8%;
+    height: 12%;
     overflow: hidden;
 }
 
 .dashboard-item ul {
-    height: 60%;
+    height: 55%;
     padding-right: 10px;
     overflow-y: auto;
 }
